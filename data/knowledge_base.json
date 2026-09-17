@@ -1,0 +1,69 @@
+[
+  {
+    "id": "soil-cover-001",
+    "topic": "soil health",
+    "title": "Cover crops and soil organic carbon",
+    "source": "FAO",
+    "year": 2022,
+    "content": "Cover crops can protect soil from erosion, increase organic matter inputs, improve soil structure, and contribute to soil organic carbon accumulation. Legume cover crops can additionally contribute biologically fixed nitrogen.",
+    "metrics": [
+      "soil organic carbon",
+      "soil structure",
+      "erosion risk",
+      "soil fertility"
+    ]
+  },
+  {
+    "id": "habitat-diversity-001",
+    "topic": "biodiversity",
+    "title": "Habitat diversity and biodiversity",
+    "source": "IPBES",
+    "year": 2019,
+    "content": "Increasing habitat diversity can provide a wider range of resources and niches for organisms. Habitat simplification and land-use change are major pressures affecting terrestrial biodiversity.",
+    "metrics": [
+      "species richness",
+      "habitat diversity",
+      "pollinator abundance"
+    ]
+  },
+  {
+    "id": "agroforestry-001",
+    "topic": "land use",
+    "title": "Agroforestry and ecosystem services",
+    "source": "FAO",
+    "year": 2021,
+    "content": "Agroforestry integrates trees with crops or livestock and can provide multiple ecosystem services including habitat provision, soil protection, carbon storage, and improved landscape connectivity.",
+    "metrics": [
+      "habitat connectivity",
+      "soil organic carbon",
+      "biodiversity",
+      "carbon storage"
+    ]
+  },
+  {
+    "id": "water-biodiversity-001",
+    "topic": "water",
+    "title": "Water availability and ecosystem biodiversity",
+    "source": "UNEP",
+    "year": 2021,
+    "content": "Water availability is an important ecological constraint affecting species survival, vegetation productivity, and ecosystem functioning. Maintaining natural water regimes can support aquatic and terrestrial biodiversity.",
+    "metrics": [
+      "water availability",
+      "species survival",
+      "vegetation productivity"
+    ]
+  },
+  {
+    "id": "pollution-001",
+    "topic": "human impact",
+    "title": "Pollution and biodiversity",
+    "source": "IPBES",
+    "year": 2019,
+    "content": "Pollution is among the major direct drivers of biodiversity loss. Reducing harmful pollutants can reduce ecological stress and improve conditions for sensitive organisms.",
+    "metrics": [
+      "pollution",
+      "species survival",
+      "ecosystem health"
+    ]
+  }
+]
