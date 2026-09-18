@@ -88,10 +88,19 @@ def validate_evidence(state: GroundTruthState):
     valid_recommendations = []
 
     for recommendation in state["recommendations"]:
+        evidence = recommendation.get("evidence", [])
 
-        # Keep recommendations only when
-        # scientific evidence was actually retrieved.
-        if recommendation.get("evidence"):
+        direct_evidence = [
+            item
+            for item in evidence
+            if item.get("evidence_strength") == "direct"
+        ]
+
+        if direct_evidence:
+            recommendation["evidence_status"] = "grounded"
+            valid_recommendations.append(recommendation)
+        elif evidence:
+            recommendation["evidence_status"] = "related_only"
             valid_recommendations.append(recommendation)
 
     return {
