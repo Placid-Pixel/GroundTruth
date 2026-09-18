@@ -1,69 +1,408 @@
 [
   {
-    "id": "soil-cover-001",
+    "id": "fao-soil-cover-001",
     "topic": "soil health",
-    "title": "Cover crops and soil organic carbon",
+    "title": "Soil organic cover and conservation agriculture",
     "source": "FAO",
-    "year": 2022,
-    "content": "Cover crops can protect soil from erosion, increase organic matter inputs, improve soil structure, and contribute to soil organic carbon accumulation. Legume cover crops can additionally contribute biologically fixed nitrogen.",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/conservation-agriculture/in-practice/soil-organic-cover/en/",
+    "content": "Maintaining organic soil cover with crop residues and cover crops can protect soil from erosion, contribute organic matter, support soil structure, and improve nutrient cycling. Vegetative cover can also provide habitat and resources for organisms within agricultural systems.",
     "metrics": [
       "soil organic carbon",
       "soil structure",
       "erosion risk",
-      "soil fertility"
+      "nutrient cycling",
+      "habitat diversity"
     ]
   },
   {
-    "id": "habitat-diversity-001",
-    "topic": "biodiversity",
-    "title": "Habitat diversity and biodiversity",
-    "source": "IPBES",
-    "year": 2019,
-    "content": "Increasing habitat diversity can provide a wider range of resources and niches for organisms. Habitat simplification and land-use change are major pressures affecting terrestrial biodiversity.",
+    "id": "fao-conservation-agriculture-001",
+    "topic": "soil health",
+    "title": "Conservation agriculture principles",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/conservation-agriculture/en/",
+    "content": "Conservation agriculture is based on principles including minimum soil disturbance, permanent soil cover, and crop diversification. These practices are intended to improve soil condition, reduce degradation, and support more sustainable agricultural ecosystems.",
     "metrics": [
-      "species richness",
-      "habitat diversity",
-      "pollinator abundance"
+      "soil health",
+      "soil organic carbon",
+      "erosion risk",
+      "soil structure",
+      "crop diversity"
     ]
   },
   {
-    "id": "agroforestry-001",
+    "id": "fao-agroforestry-001",
     "topic": "land use",
     "title": "Agroforestry and ecosystem services",
     "source": "FAO",
     "year": 2021,
-    "content": "Agroforestry integrates trees with crops or livestock and can provide multiple ecosystem services including habitat provision, soil protection, carbon storage, and improved landscape connectivity.",
+    "document_type": "technical report",
+    "source_url": "https://www.fao.org/4/xii/ms20-e.htm",
+    "content": "Agroforestry integrates trees with crops or livestock and can provide multiple ecosystem services. Trees can contribute to soil protection, carbon storage, habitat provision, water regulation, and landscape connectivity.",
     "metrics": [
       "habitat connectivity",
-      "soil organic carbon",
       "biodiversity",
-      "carbon storage"
+      "soil organic carbon",
+      "carbon storage",
+      "water regulation"
     ]
   },
   {
-    "id": "water-biodiversity-001",
-    "topic": "water",
-    "title": "Water availability and ecosystem biodiversity",
-    "source": "UNEP",
-    "year": 2021,
-    "content": "Water availability is an important ecological constraint affecting species survival, vegetation productivity, and ecosystem functioning. Maintaining natural water regimes can support aquatic and terrestrial biodiversity.",
-    "metrics": [
-      "water availability",
-      "species survival",
-      "vegetation productivity"
-    ]
-  },
-  {
-    "id": "pollution-001",
-    "topic": "human impact",
-    "title": "Pollution and biodiversity",
+    "id": "ipbes-biodiversity-001",
+    "topic": "biodiversity",
+    "title": "Habitat diversity and biodiversity",
     "source": "IPBES",
     "year": 2019,
-    "content": "Pollution is among the major direct drivers of biodiversity loss. Reducing harmful pollutants can reduce ecological stress and improve conditions for sensitive organisms.",
+    "document_type": "global assessment",
+    "source_url": "https://www.ipbes.net/global-assessment",
+    "content": "Changes in land use and habitat simplification are important pressures on biodiversity. Maintaining diverse habitats can provide organisms with a wider range of resources, shelter, and ecological niches.",
+    "metrics": [
+      "species richness",
+      "habitat diversity",
+      "pollinator abundance",
+      "habitat quality"
+    ]
+  },
+  {
+    "id": "ipcc-land-biodiversity-001",
+    "topic": "land use",
+    "title": "Land degradation, biodiversity and ecosystem services",
+    "source": "IPCC",
+    "year": 2019,
+    "document_type": "special report",
+    "source_url": "https://www.ipcc.ch/srccl/",
+    "content": "Land-use change, land degradation, and unsustainable land management can affect terrestrial ecosystems, biodiversity, soil functions, and ecosystem services. Sustainable land management can help reduce degradation and support ecosystem functions.",
+    "metrics": [
+      "land degradation",
+      "biodiversity",
+      "soil health",
+      "ecosystem services",
+      "land use"
+    ]
+  },
+  {
+    "id": "ipcc-climate-ecosystems-001",
+    "topic": "climate",
+    "title": "Climate change impacts on terrestrial and freshwater ecosystems",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/",
+    "content": "Climate change affects terrestrial and freshwater ecosystems through changes in temperature, precipitation, extreme events, and other climate-related pressures. These changes can alter species distributions, ecological processes, and ecosystem functioning.",
+    "metrics": [
+      "temperature",
+      "rainfall",
+      "species distribution",
+      "ecosystem functioning",
+      "climate stress"
+    ]
+  },
+  {
+    "id": "ipcc-drought-001",
+    "topic": "water",
+    "title": "Drought and ecosystem impacts",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/",
+    "content": "Changes in drought frequency and intensity can increase water stress for ecosystems. Reduced water availability can affect vegetation productivity, species survival, and ecosystem functioning, particularly when combined with other environmental pressures.",
+    "metrics": [
+      "water availability",
+      "drought stress",
+      "vegetation productivity",
+      "species survival",
+      "ecosystem functioning"
+    ]
+  },
+  {
+    "id": "unep-freshwater-001",
+    "topic": "water",
+    "title": "Freshwater ecosystems and biodiversity",
+    "source": "UNEP",
+    "year": 2021,
+    "document_type": "environmental assessment",
+    "source_url": "https://www.unep.org/explore-topics/freshwater",
+    "content": "Freshwater availability and ecosystem condition are closely connected to biodiversity and ecosystem functioning. Protecting freshwater systems and maintaining ecological water conditions can support aquatic organisms and surrounding ecosystems.",
+    "metrics": [
+      "water availability",
+      "freshwater ecosystem health",
+      "species survival",
+      "aquatic biodiversity"
+    ]
+  },
+  {
+    "id": "ipbes-pollution-001",
+    "topic": "human impact",
+    "title": "Pollution as a biodiversity pressure",
+    "source": "IPBES",
+    "year": 2019,
+    "document_type": "global assessment",
+    "source_url": "https://www.ipbes.net/global-assessment",
+    "content": "Pollution is one of the major direct drivers affecting biodiversity. Reducing harmful pollutants can decrease ecological stress and improve environmental conditions for organisms and ecosystems.",
     "metrics": [
       "pollution",
       "species survival",
-      "ecosystem health"
+      "ecosystem health",
+      "ecological stress"
+    ]
+  },
+  {
+    "id": "unep-restoration-001",
+    "topic": "ecosystem restoration",
+    "title": "Ecosystem restoration and biodiversity",
+    "source": "UNEP",
+    "year": 2021,
+    "document_type": "global restoration guidance",
+    "source_url": "https://www.unep.org/resources/report/decade-action",
+    "content": "Ecosystem restoration can improve ecological condition by recovering degraded habitats, restoring ecological functions, and supporting biodiversity. Restoration approaches should consider local ecological conditions and the causes of degradation.",
+    "metrics": [
+      "biodiversity",
+      "habitat quality",
+      "ecosystem functioning",
+      "vegetation cover"
+    ]
+  },
+  {
+    "id": "fao-soil-biodiversity-001",
+    "topic": "soil biodiversity",
+    "title": "Soil biodiversity and soil functions",
+    "source": "FAO",
+    "year": 2020,
+    "document_type": "technical guidance",
+    "source_url": "https://www.fao.org/soils-portal/soil-biodiversity/en/",
+    "content": "Soil organisms contribute to decomposition, nutrient cycling, soil structure, and other soil functions. Management practices that maintain organic matter and suitable soil conditions can support soil biodiversity and associated ecosystem functions.",
+    "metrics": [
+      "soil biodiversity",
+      "nutrient cycling",
+      "soil structure",
+      "soil organic matter",
+      "soil health"
+    ]
+  },
+  {
+    "id": "ipcc-agriculture-water-001",
+    "topic": "climate and agriculture",
+    "title": "Agriculture, water and climate resilience",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/",
+    "content": "Climate-related changes in temperature, rainfall, drought, and extreme events can affect agricultural ecosystems and water availability. Diversified and sustainable land management approaches can contribute to resilience while reducing environmental pressures.",
+    "metrics": [
+      "temperature",
+      "rainfall",
+      "water availability",
+      "climate resilience",
+      "land management"
+    ]
+  },
+    {
+    "id": "fao-pollination-001",
+    "topic": "biodiversity",
+    "title": "Pollination and agricultural biodiversity",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/biodiversity/cab/ro/",
+    "content": "Pollinators are an important component of crop-associated biodiversity. Diverse agricultural systems can provide resources and habitat for pollinators, supporting pollination and associated ecosystem functions.",
+    "metrics": [
+      "pollinator abundance",
+      "pollination",
+      "crop diversity",
+      "habitat diversity",
+      "biodiversity"
+    ]
+  },
+  {
+    "id": "fao-pest-control-001",
+    "topic": "biodiversity",
+    "title": "Biodiversity and natural pest regulation",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/pest-and-pesticide-management/ipm/integrated-pest-management/en",
+    "content": "Integrated pest management uses ecological processes and natural pest-control mechanisms while aiming to minimize disruption to agroecosystems. Predators and other beneficial organisms can contribute to biological pest regulation.",
+    "metrics": [
+      "pest pressure",
+      "natural pest control",
+      "beneficial insects",
+      "biodiversity",
+      "pesticide pressure"
+    ]
+  },
+  {
+    "id": "fao-crop-genetic-diversity-001",
+    "topic": "agricultural biodiversity",
+    "title": "Crop genetic diversity and resilience",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/tools-guidelines/what-is-agricultural-biodiversity/en/",
+    "content": "Crop genetic diversity can help maintain production and nutritional diversity across different agroecological conditions. Maintaining diverse crop genetic resources can contribute to adaptation and resilience under changing environmental conditions.",
+    "metrics": [
+      "crop genetic diversity",
+      "agricultural resilience",
+      "production stability",
+      "climate adaptation",
+      "biodiversity"
+    ]
+  },
+  {
+    "id": "fao-crop-diversification-001",
+    "topic": "land use",
+    "title": "Crop diversification and ecosystem services",
+    "source": "FAO",
+    "year": 2020,
+    "document_type": "scientific synthesis",
+    "source_url": "https://www.fao.org/agroecology/in-action/detail/agricultural-diversification-promotes-multiple-ecosystem-services-without-compromising-yield/en",
+    "content": "Evidence synthesized across many studies indicates that agricultural diversification can enhance biodiversity and ecosystem services including pollination, pest control, nutrient cycling, soil fertility, and water regulation. Outcomes can vary with context and management.",
+    "metrics": [
+      "crop diversity",
+      "species richness",
+      "pollination",
+      "pest control",
+      "soil fertility",
+      "water regulation"
+    ]
+  },
+  {
+    "id": "fao-soil-microorganisms-001",
+    "topic": "soil biodiversity",
+    "title": "Soil organisms and nutrient cycling",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/tools-guidelines/what-is-agricultural-biodiversity/en/",
+    "content": "Soil fauna and microorganisms contribute to decomposition, nutrient cycling, soil structure, and other soil functions. Maintaining biological diversity below ground is therefore an important component of healthy agroecosystems.",
+    "metrics": [
+      "soil biodiversity",
+      "microbial activity",
+      "nutrient cycling",
+      "soil structure",
+      "soil fertility"
+    ]
+  },
+  {
+    "id": "fao-agricultural-intensification-001",
+    "topic": "human impact",
+    "title": "Agricultural intensification and biodiversity pressure",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "official guidance",
+    "source_url": "https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/risk-reduction-mainstreaming-biodiversity/en/",
+    "content": "Intensive agricultural production can place pressure on land, water, biodiversity, and other natural resources. Reducing unnecessary environmental pressures and incorporating biodiversity-supporting management can improve ecological resilience.",
+    "metrics": [
+      "land pressure",
+      "water pressure",
+      "biodiversity",
+      "pesticide pressure",
+      "ecological resilience"
+    ]
+  },
+  {
+    "id": "fao-agroecology-resilience-001",
+    "topic": "climate and agriculture",
+    "title": "Agroecology, biodiversity and climate resilience",
+    "source": "FAO",
+    "year": 2026,
+    "document_type": "technical platform",
+    "source_url": "https://www.fao.org/platforms/green-agriculture/areas-of-work/natural-resources-biodiversity-green-production/agroecology/",
+    "content": "Agroecology applies ecological principles to interactions among crops, animals, people, and the environment. Diversification and conservation of above- and below-ground biodiversity can support ecosystem services, sustainability, and resilience to climate change.",
+    "metrics": [
+      "biodiversity",
+      "climate resilience",
+      "soil health",
+      "water use",
+      "ecosystem services"
+    ]
+  },
+  {
+    "id": "ipcc-species-range-001",
+    "topic": "climate",
+    "title": "Climate-driven species range shifts",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/ccp1/",
+    "content": "Climate warming has caused observed shifts in the geographic ranges of many animal and plant species. Range shifts can occur toward higher latitudes or elevations, while range contractions can increase risks to biodiversity and local populations.",
+    "metrics": [
+      "temperature",
+      "species distribution",
+      "range shifts",
+      "biodiversity",
+      "climate stress"
+    ]
+  },
+  {
+    "id": "ipcc-habitat-fragmentation-001",
+    "topic": "land use",
+    "title": "Habitat loss and fragmentation",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-2/",
+    "content": "Habitat loss and land-use change are major pressures affecting species and ecosystems. Habitat conversion can interact with climate change and other pressures, influencing species survival, distribution, and ecosystem resilience.",
+    "metrics": [
+      "habitat fragmentation",
+      "habitat loss",
+      "species survival",
+      "species distribution",
+      "ecosystem resilience"
+    ]
+  },
+  {
+    "id": "ipcc-compound-pressures-001",
+    "topic": "human impact",
+    "title": "Interactions among climate and human pressures",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/ccp1/",
+    "content": "Climate change impacts on biodiversity can be compounded by habitat loss and fragmentation, pollution, water abstraction, nutrient enrichment, invasive species, and other human pressures. Multiple simultaneous pressures can increase vulnerability and reduce ecological resilience.",
+    "metrics": [
+      "climate stress",
+      "habitat fragmentation",
+      "pollution",
+      "water availability",
+      "ecological resilience"
+    ]
+  },
+  {
+    "id": "ipcc-species-resilience-001",
+    "topic": "biodiversity",
+    "title": "Species loss and ecosystem resilience",
+    "source": "IPCC",
+    "year": 2022,
+    "document_type": "assessment report",
+    "source_url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-2/",
+    "content": "Loss of species can reduce ecosystem functioning and the ability of ecosystems to provide services. Biodiversity loss can also reduce resilience to climate-related pressures.",
+    "metrics": [
+      "species richness",
+      "ecosystem functioning",
+      "ecosystem services",
+      "climate resilience",
+      "biodiversity"
+    ]
+  },
+  {
+    "id": "fao-diversification-meta-001",
+    "topic": "agriculture",
+    "title": "Agricultural diversification and multiple ecosystem services",
+    "source": "FAO",
+    "year": 2020,
+    "document_type": "peer-reviewed synthesis",
+    "source_url": "https://www.fao.org/agroecology/in-action/detail/agricultural-diversification-promotes-multiple-ecosystem-services-without-compromising-yield/en",
+    "content": "A large synthesis of agricultural diversification studies found that diversification practices can improve above- and below-ground biodiversity and ecosystem services such as pollination, pest control, nutrient cycling, soil fertility, and water regulation. Effects vary depending on the practice and context.",
+    "metrics": [
+      "biodiversity",
+      "pollination",
+      "pest control",
+      "nutrient cycling",
+      "soil fertility",
+      "water regulation"
     ]
   }
 ]

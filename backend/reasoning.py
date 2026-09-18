@@ -9,6 +9,8 @@ def analyze_environment(
     water_availability: float | None = None,
     land_use: str | None = None,
     pollution: float | None = None,
+    temperature: float | None = None,
+    rainfall: float | None = None,
 ) -> Dict:
     """
     Multi-metric environmental reasoning layer.
@@ -171,6 +173,86 @@ def analyze_environment(
                 ],
                 "time_horizon": "short-to-medium-term"
             })
+        # Climate stress and biodiversity
+    if (
+        temperature is not None
+        and biodiversity is not None
+        and temperature >= 30
+        and biodiversity < 50
+    ):
+        findings.append({
+            "relationship": "temperature_biodiversity",
+            "variables": [
+                "temperature",
+                "biodiversity"
+            ],
+            "observation": (
+                "Higher temperature conditions combined with "
+                "low biodiversity may indicate increased climate "
+                "stress on species and ecosystems."
+            )
+        })
+
+        recommendations.append({
+            "action": (
+                "Increase native vegetation, shade cover, and "
+                "habitat refuges to reduce heat stress."
+            ),
+            "reasoning": (
+                "Vegetation can provide cooler microhabitats and "
+                "refuge conditions, while maintaining habitat quality "
+                "can support species under climate stress."
+            ),
+            "metrics_impacted": [
+                "temperature",
+                "biodiversity",
+                "species distribution",
+                "ecosystem functioning"
+            ],
+            "time_horizon": "short-to-medium-term"
+        })
+
+    # Rainfall + water availability + biodiversity
+    if (
+        rainfall is not None
+        and water_availability is not None
+        and biodiversity is not None
+        and rainfall < 500
+        and water_availability < 40
+        and biodiversity < 50
+    ):
+        findings.append({
+            "relationship": "rainfall_water_biodiversity",
+            "variables": [
+                "rainfall",
+                "water availability",
+                "biodiversity"
+            ],
+            "observation": (
+                "Low rainfall and low water availability combined "
+                "with low biodiversity may indicate drought-related "
+                "ecological stress."
+            )
+        })
+
+        recommendations.append({
+            "action": (
+                "Improve landscape water retention and maintain "
+                "ecological water availability during dry periods."
+            ),
+            "reasoning": (
+                "Maintaining water availability can reduce drought "
+                "stress and support vegetation productivity and "
+                "species survival."
+            ),
+            "metrics_impacted": [
+                "rainfall",
+                "water availability",
+                "species survival",
+                "ecosystem functioning"
+            ],
+            "time_horizon": "short-to-medium-term"
+        })
 
     return {
         "findings": findings,

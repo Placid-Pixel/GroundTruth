@@ -37,6 +37,15 @@ class EnvironmentalInput(BaseModel):
         default=None,
         description="Pollution indicator"
     )
+    temperature: Optional[float] = Field(
+    default=None,
+    description="Average temperature in degrees Celsius"
+    )
+
+    rainfall: Optional[float] = Field(
+        default=None,
+        description="Rainfall indicator in millimeters"
+    )
 
 
 class RecommendationRequest(BaseModel):
@@ -54,9 +63,12 @@ class EvidenceItem(BaseModel):
     source: str
     year: int
     title: str
+    document_type: Optional[str] = None
+    source_url: Optional[str] = None
     supporting_metrics: List[str]
     similarity_score: Optional[float] = None
     evidence_score: Optional[float] = None
+    evidence_strength: Optional[str] = None
 
 
 class Recommendation(BaseModel):

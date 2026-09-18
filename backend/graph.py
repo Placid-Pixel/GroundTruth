@@ -2,7 +2,7 @@ from typing import TypedDict, Any
 
 from langgraph.graph import StateGraph, START, END
 
-from backend.semantic_retriever import retriever
+from backend.vector_retriever import retrieve_from_pgvector
 from backend.reasoning import analyze_environment
 from backend.recommendation import ground_recommendations
 from backend.input_validator import detect_missing_data
@@ -43,15 +43,11 @@ def route_after_validation(state: GroundTruthState):
 
 
 def retrieve_evidence(state: GroundTruthState):
-    evidence = retriever.retrieve(
+    evidence = retrieve_from_pgvector(
         state["query"],
         top_k=5
     )
-
-    return {
-        "evidence": evidence
-    }
-
+    return {"evidence": evidence}
 
 def multi_metric_analysis(state: GroundTruthState):
     environment = state["environment"]
@@ -69,8 +65,9 @@ def multi_metric_analysis(state: GroundTruthState):
         water_availability=get_value("water_availability"),
         land_use=get_value("land_use"),
         pollution=get_value("pollution"),
+        temperature=get_value("temperature"),
+        rainfall=get_value("rainfall"),
     )
-
     return {
         "analysis": analysis
     }
