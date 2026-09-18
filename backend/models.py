@@ -56,6 +56,7 @@ class EvidenceItem(BaseModel):
     title: str
     supporting_metrics: List[str]
     similarity_score: Optional[float] = None
+    evidence_score: Optional[float] = None
 
 
 class Recommendation(BaseModel):
@@ -68,5 +69,5 @@ class Recommendation(BaseModel):
 
 class RecommendationResponse(BaseModel):
     query: str
-    findings: List[dict]
-    recommendations: List[Recommendation]
+    findings: List[dict] = []
+    recommendations: List[Recommendation] = []

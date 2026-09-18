@@ -5,15 +5,13 @@ from backend.models import (
     RecommendationResponse,
 )
 
-from backend.semantic_retriever import retriever
-from backend.reasoning import analyze_environment
-from backend.recommendation import ground_recommendations
+from backend.graph import groundtruth_graph
 
 
 app = FastAPI(
     title="GroundTruth",
     description="Evidence-grounded AI biodiversity intelligence system",
-    version="0.2.0"
+    version="0.3.0"
 )
 
 
@@ -38,39 +36,15 @@ def health_check():
 def recommend(
     request: RecommendationRequest
 ):
-    # 1. Retrieve scientific evidence
-    evidence = retriever.retrieve(
-        request.query,
-        top_k=5
-    )
-
-    # 2. Extract structured environmental variables
-    environment = request.environment
-
-    if environment:
-        analysis = analyze_environment(
-            soil_organic_carbon=environment.soil_organic_carbon,
-            soil_ph=environment.soil_ph,
-            soil_moisture=environment.soil_moisture,
-            biodiversity=environment.biodiversity,
-            water_availability=environment.water_availability,
-            land_use=environment.land_use,
-            pollution=environment.pollution,
-        )
-    else:
-        analysis = {
-            "findings": [],
-            "recommendations": []
+    result = groundtruth_graph.invoke(
+        {
+            "query": request.query,
+            "environment": (
+                request.environment.model_dump()
+                if request.environment
+                else None
+            )
         }
-
-    # 3. Ground recommendations with retrieved evidence
-    grounded = ground_recommendations(
-        analysis["recommendations"],
-        evidence
     )
 
-    return {
-        "query": request.query,
-        "findings": analysis["findings"],
-        "recommendations": grounded
-    }
+    return result["response"]
